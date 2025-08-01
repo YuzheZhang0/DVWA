@@ -14,5 +14,11 @@ pipeline{
                 git branch: 'main', url: 'https://github.com/YuzheZhang0/DVWA'
             }
         }
+        stage("Build Application"){
+            steps{
+                sh "sudo /var/scripts/dvwa/install.sh"
+            }
+            
+        }
     }
 }
