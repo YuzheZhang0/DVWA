@@ -16,7 +16,7 @@ pipeline{
         }
         stage("Build Application"){
             steps{
-                sh "sudo /var/scripts/dvwa/install.sh"
+                sh "sudo sh /var/scripts/dvwa/install.sh"
             }
             
         }
