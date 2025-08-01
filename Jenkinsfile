@@ -11,7 +11,7 @@ pipeline{
         }
         stage("Checkout from SCM"){
             steps{
-                git branch: 'main', url: 'https://github.com/YuzheZhang0/DVWA'
+                git branch: 'master', url: 'https://github.com/YuzheZhang0/DVWA'
             }
         }
         stage("Build Application"){
